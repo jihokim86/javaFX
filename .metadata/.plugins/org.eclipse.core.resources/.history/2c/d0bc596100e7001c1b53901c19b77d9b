@@ -1,0 +1,33 @@
+package application;
+	
+import java.awt.TextField;
+
+import javafx.application.Application;
+import javafx.geometry.Insets;
+import javafx.stage.Stage;
+import javafx.scene.layout.HBox;
+
+
+public class Main extends Application {
+	@Override
+	public void start(Stage stage) {
+		try {
+			
+			HBox hbox = new HBox();
+			hbox.setPadding(new Insets(10));
+			hbox.setSpacing(10);
+			
+			TextField textField = new TextField();
+			
+			
+			
+			
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void main(String[] args) {
+		launch(args);
+	}
+}
