@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane 
+prefHeight="150.0" 
+prefWidth="420.0" 
+xmlns="http://javafx.com/javafx/8" 
+xmlns:fx="http://javafx.com/fxml/1" 
+fx:controller="p897.RootController">
+
+   <center>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="400.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="100.0" spacing="20.0">
+               <children>
+                  <CheckBox fx:id="chk1"  text="안경" onAction="#handleChkAction"/>
+                  <CheckBox fx:id="chk2"  text="모자" onAction="#handleChkAction"/>
+               </children>
+            </VBox>
+            
+            <ImageView fx:id="checkImageView"  fitWidth="100.0"  preserveRatio="true" >
+            <image><Image url="@images/geek.gif"/></image>
+            </ImageView>
+            
+            <Separator orientation="VERTICAL" prefHeight="100.0"  />
+            
+            <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="150.0" spacing="20.0">
+            
+               <children>
+                  <RadioButton fx:id="rad1" text="BubbleChart" userData="BubbleChart">
+                  <toggleGroup>
+                         <ToggleGroup fx:id="group" />
+                      </toggleGroup>
+                      </RadioButton>
+                  <RadioButton fx:id="rad2"  selected="true" userData="BarChart" toggleGroup="$group" text="BarChart" />
+                  <RadioButton fx:id="rad3"  userData="AreaChart" toggleGroup="$group" text="AreaChart" />
+               </children>
+            </VBox>
+            
+            <ImageView fx:id="radioImageView"  fitWidth="100.0"  preserveRatio="true">
+            <image><Image url="@images/BarChart.png"/></image>
+            </ImageView>
+         </children>
+       
+      </HBox>
+   </center>
+   
+   <bottom>
+      <Button fx:id="btnExit" onAction="#handleBtnExitAction" BorderPane.alignment="CENTER">
+         <graphic>
+         	<ImageView>
+            <image>
+                  <Image url="@images/exit.png" />
+            </image></ImageView>
+         </graphic>
+         <BorderPane.margin><Insets top="20.0" /></BorderPane.margin>         
+      </Button>
+   </bottom>
+ 
+</BorderPane>
