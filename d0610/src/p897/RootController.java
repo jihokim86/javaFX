@@ -36,7 +36,7 @@ public class RootController implements Initializable {
 	public void handleChkAction(ActionEvent e) {
 		if(chk1.isSelected() && chk2.isSelected()) {
 			checkImageView.setImage(new Image(getClass().getResource("images/geek-glasses-hair.gif").toString()));
-		}else if(chk1.isSelected()) {
+		}else if(chk2.isSelected()) {
 			checkImageView.setImage(new Image(getClass().getResource("images/geek-hair.gif").toString()));
 		}else {
 			checkImageView.setImage(new Image(getClass().getResource("images/geek.gif").toString()));
