@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.collections.FXCollections ?>
+
+
+<BorderPane prefHeight="400.0" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml" fx:controller="controller.Main">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="파일">
+            <items>
+              <MenuItem mnemonicParsing="false" text="저장하기" onAction="#saveAction" />
+              <MenuItem mnemonicParsing="false" text="종료하기" onAction="#endAction" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="더보기">
+            <items>
+              <MenuItem mnemonicParsing="false" text="알아보기" onAction="#locationChart" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="도움말">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" onAction="#aboutAction" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+   </center>
+</BorderPane>

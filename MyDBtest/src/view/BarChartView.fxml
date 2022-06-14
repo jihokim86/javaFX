@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.collections.FXCollections ?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="controller.BarChartController">
+   <children>
+      <Label alignment="CENTER" graphicTextGap="10.0" layoutX="229.0" layoutY="33.0" prefHeight="40.0" prefWidth="150.0" text="위치 부분 수량">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <BarChart layoutX="4.0" layoutY="86.0" maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="600.0" fx:id="barChar">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" fx:id="xAxis"/>
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>
